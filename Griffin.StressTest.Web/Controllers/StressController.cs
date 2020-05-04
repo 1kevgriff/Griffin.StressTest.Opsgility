@@ -65,10 +65,10 @@ namespace Griffin.StressTest.Web.Controllers
             var random = new Random();
             var num = random.Next(1, 10000);
 
-            _delays.Add(num);
 
             /*** COMMENT OUT FOR DEMOS
-            
+            _delays.Add(num);
+
             // check if we should sync metrics
             var now = DateTime.UtcNow;
             if ((now - _lastMetricSync).TotalMinutes > 1)
